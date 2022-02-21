@@ -17,12 +17,11 @@
     &__logo{
         width: 145px;
         pointer-events: visible;
-    }
 
-    img {
-        width: 100%;
+        img {
+            width: 100%;
+        }
     }
-
     &__nav{
         @include flex(center, space-between);
 
@@ -36,7 +35,7 @@
             text-transform: uppercase;
             position: relative;
             pointer-events: visible;
-        }
+       
 
         &::before, &::after {
             content: "";
@@ -61,5 +60,6 @@
             right: 0;
             bottom: 0;
         }
-    }
+     }
+   }
 }

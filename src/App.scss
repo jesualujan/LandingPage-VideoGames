@@ -1,4 +1,4 @@
-@use './scss/' as *;
+@use "./scss/" as * ;
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
 *{
@@ -12,12 +12,13 @@
 html,body{
   font-size: 100%;
   position: relative;
+  height: 100%;
 }
 
 body {
   font-family: $font-family;
-  font-size: 1.5rem;
-  font-weight: 350;
+  font-size: 1.2rem;
+  font-weight: 400;
   line-height: 1.5;
   background-color: $black;
   color: $white;

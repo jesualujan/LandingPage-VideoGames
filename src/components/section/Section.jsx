@@ -8,11 +8,10 @@ const Section = props => {
   )
 }
 
-const SectionContent = props => {
+export const SectionContent = props => {
     const bgImage = props.bgImage 
-    ? { backgroundImage: `url(${props.bgImage})`} 
-    : {}
-
+    ? { backgroundImage: `url(${props.bgImage})`
+     } : {}
     return (
       <div className={`section__content ${props.className}`}
         style={bgImage}>

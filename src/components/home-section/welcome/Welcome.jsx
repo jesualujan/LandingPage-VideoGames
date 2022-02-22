@@ -1,7 +1,11 @@
 import './welcome.scss'
 import HomeSection from '../HomeSection'
-import {bg1} from '../../../assets/images' 
+import Button from '../../button/Button'
+import {
+    bg1,champGaren,champAshe,champAhri,distortion
+} from '../../../assets/images' 
 
+const champImage=[champGaren,champAshe,champAhri]
 
 const Welcome = props => {
   return (
@@ -20,12 +24,19 @@ const Welcome = props => {
             Forma equipo con tus amigos y pon a prueba tus habilidades en combates MOBA 5v5. Explora el universo vivo de Runaterra a través de la historia, los cómics, los juegos y mucho más. Luego, sumérgete en la comunidad de jugadores, cosplayers, músicos y creadores de contenido que están esperando que te unas a ellos.
             </div>
             <div className="btns m-t-4"> 
-                <button>Jugar Ahora</button>
-                <button>Comenzar</button>
+                <Button className="btn-main">Jugar Ahora</Button>
+                <Button className="btn-second">Comenzar</Button>
             </div>
           </div>
       </div>
-      <div className="welcome__img relative"></div>
+      <div className="welcome__img relative">
+          <div className="welcome__img__slide">
+              {
+                  champImage.map((item, index) => 
+                 <img src={item} key={index}/>)
+              }
+          </div>
+      </div>
     </HomeSection>
   )
 }

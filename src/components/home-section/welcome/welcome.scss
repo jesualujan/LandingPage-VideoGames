@@ -22,4 +22,12 @@
             margin-left: 1rem;
         }
     }
+    &__img{
+        @include flex (flex-end, flex-start);
+          &__slide {
+              height: 900px;
+              width: 900px;
+              overflow: hidden;
+          }
+    }
 }

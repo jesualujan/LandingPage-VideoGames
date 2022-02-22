@@ -1,8 +1,10 @@
-import React from 'react'
+import './button.scss'
 
-const Button = () => {
+const Button = props => {
   return (
-    <div>Button</div>
+    <button className={`btn ${props.className}`}>
+        {props.children}
+    </button>
   )
 }
 
